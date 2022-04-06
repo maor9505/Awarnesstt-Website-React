@@ -1,0 +1,40 @@
+nav {
+  background-color: #ffebcc;
+  box-shadow: 50%;
+  border-radius: 15px;
+  margin-top: 10px;
+  
+}
+/* .navbar-toggler-icon{
+  color: black;
+} */
+.title {
+  color: black;
+  display: inline-block;
+  font-size: 25px !important;
+}
+.title:hover {
+  color: aliceblue;
+}
+.main-content {
+  direction: rtl;
+}
+
+ .main-content li {
+  margin: 12px;
+}
+ .main-content a {
+  text-decoration: none !important;
+  color: black !important;
+  font-size: 15px !important;
+  font-weight: 900 !important;
+}
+.slogan {
+  font-family: "Raleway", sans-serif;
+  line-height: normal;
+  font-weight: 900;
+  font-size: 0.8rem !important;
+  float: right;
+  text-align: left;
+  color: rgb(0, 0, 0);
+}

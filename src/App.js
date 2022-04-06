@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense,lazy } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import classes from "./App.module.css";
+import Footer from './Common/Footer';
+import Loading from './Common/Loading/Loading';
+import NavBar from './Common/navBar';
+import ScrollToTop from "./Common/ScrolltoTop";
+import TipolPage from './Components/TipolPage';
 
-function App() {
+// const NavBar = lazy(() => import('./Common/navBar.js'));
+// const HomePage = lazy( () => import("./Components/HomePage"));
+const HomePage = lazy(() => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(import("./Components/HomePage")), 3000);
+  });
+});
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header>
+        <NavBar></NavBar>
       </header>
+      <main>
+        <Suspense fallback={<Loading />}>
+          <ScrollToTop/>
+            <Routes>
+              <Route path="/" element={<HomePage />}></Route>{" "}
+              <Route path="/tipol/:id" element={<TipolPage />}></Route>
+            </Routes>
+        </Suspense>
+      </main>
+      <Footer></Footer>
     </div>
   );
 }

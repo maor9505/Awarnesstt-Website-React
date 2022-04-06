@@ -1,0 +1,16 @@
+.header{
+  text-align: center;
+  width: 100%;
+    font-size: 40px;
+      color: #777;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.main{
+  height: 100%;
+ overflow: hidden;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}

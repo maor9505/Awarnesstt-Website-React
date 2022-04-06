@@ -1,0 +1,43 @@
+.main{
+  display: none;
+}
+.content{
+  /* height: 110vh; */
+   overflow: hidden;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
+}
+.header{
+  text-align: center;
+  width: 100%;
+    font-size: 40px;
+      color: #777;
+    justify-content: center;
+    margin-top: 100px;
+}
+   @media (min-width: 820px) {
+  .main{
+    position: relative;
+     height: 80vh; 
+      display: flex;
+      flex: 1;
+      /* margin-top: 50px; */
+    }
+    .mobile{
+  display: none;
+}
+}
+@media (max-width: 640px) {
+.mobile{
+ margin-top: 80px;
+}
+.content{
+    height: 100%;
+
+}
+.header{
+  margin-top: 100px;
+}
+}

@@ -1,0 +1,47 @@
+.header-content{
+   overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../assest/images/img1.jpg);
+  background-position: center center;
+  background-size: cover; 
+  height: 100vh;
+     box-shadow: -2px 5px 21px 5px rgba(0,0,0,0.65);
+
+
+}
+.header-text{
+ position: absolute;
+  top: 60%;
+  transform: translateY(-55%);
+  text-align: center;
+  width: 100%;
+}
+
+.header-content .header-text h1 {
+  font-weight: 200;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  color: #fff;
+  direction: rtl;
+}
+.more-button {
+  margin-top:100px;
+  position: relative;
+height: 100%;
+
+}
+.more-button a{
+   font-size: 20px;
+  text-decoration: none;
+  color: #ffebcc ;
+  border-style: solid;
+  border-radius: 100px;
+  border-color: #ffebcc ;
+  box-shadow: 50%;
+  padding: 20px;
+  }
