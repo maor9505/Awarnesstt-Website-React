@@ -8,7 +8,7 @@ const ReviewsSection = ({ reviews }) => {
       <div className={`${classes.main}`}>
         <div className="row mt-5">
           <div className={`${classes.header}`}>
-            <h3>הביקורות שלי</h3>
+            <h3>מה אומרים עליי</h3>
           </div>
           {reviews.map((review) => (
             <ReviewCard
